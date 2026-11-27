@@ -33,7 +33,7 @@ jobs:
         run: npm run lint
 
       - name: Check Prettier
-        run: npx prettier --check .
+        run: npm run format:check
 
       - name: Run tests
         run: npm test -- --ci
